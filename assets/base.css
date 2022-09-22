@@ -2370,6 +2370,20 @@ input[type='checkbox'] {
   margin-right: -1.2rem;
 }
 
+.bar-login-container{
+  background: #e9e9e9;
+ 
+}
+.wrap-container-bar{
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+.wrap-container-bar .right{
+ right: 0px;
+ 
+}
+
+
 @media screen and (max-width: 989px) {
   menu-drawer ~ .header__icons .header__icon--account {
     display: none;

@@ -66,7 +66,10 @@
     align-items: center;
     line-height: calc(1 + 0.3 / var(--font-body-scale));
   }
-
+  .custom-select-none{
+    border: 0px !important;
+    background: #e9e9e9;
+}
   .list-menu__item--link {
     text-decoration: none;
     padding-bottom: 1rem;
@@ -121,6 +124,34 @@
     <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
   </symbol>
 </svg>
+<div class="bar-login-container">
+  <div class="wrap-container-bar page-width">
+    <div style="display: flex; flex-direction: row;">
+      <div style="display: flex;align-items:center;">
+        <svg style="display: inline;height: 16px;width: 16px;" class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+          <use href="#icon-search">
+        </svg>
+        <p style="display: inline;margin-left: 5px; font-size: 12px;">Search</p>
+      </div>
+      <div style="display: flex;align-items:center;">
+        <select class="custom-select-none" style="padding-left:10px ;margin-right: px;">
+          <option value="EUR">🇪🇺 VND</option>
+          <option value="GBP">🇬🇧 YEN</option>
+          <option value="USD">🇺🇸 USD</option>
+        </select>
+      </div>
+    </div>
+      <div style="display: flex;flex-direction: row;justify-content: end;">
+        <div style="display: flex;justify-content:center;">
+          <p style="display: inline;margin-left: 5px; font-size: 12px;">Login</p>
+        </div>
+        <div  style="display: flex;justify-content:center; ">
+          <p style="display: inline;margin-left: 5px; font-size: 12px;">Create account</p>
+        </div>
+      </div>
+  </div>
+
+</div>
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
   <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
     {%- if section.settings.menu != blank -%}
@@ -336,9 +367,9 @@
                     <label class="field__label" for="Search-In-Modal-1">{{ 'general.search.search' | t }}</label>
                     <input type="hidden" name="options[prefix]" value="last">
                     <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
-                      <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                      <!-- <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
                         <use href="#icon-search">
-                      </svg>
+                      </svg> -->
                     </button>
                   </div>
 
@@ -494,9 +525,9 @@
         <details>
           <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
             <span>
-              <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+              <!-- <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation">
                 <use href="#icon-search">
-              </svg>
+              </svg> -->
               <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false" role="presentation">
                 <use href="#icon-close">
               </svg>
@@ -532,9 +563,9 @@
                     <label class="field__label" for="Search-In-Modal">{{ 'general.search.search' | t }}</label>
                     <input type="hidden" name="options[prefix]" value="last">
                     <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
-                      <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                      <!-- <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
                         <use href="#icon-search">
-                      </svg>
+                      </svg> -->
                     </button>
                   </div>
 
