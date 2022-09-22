@@ -2334,7 +2334,8 @@ input[type='checkbox'] {
 }
 
 .header__icon {
-  color: rgb(var(--color-foreground));
+  /* color: rgb(var(--color-foreground)); */
+  color: #000;
 }
 
 .header__icon span {
@@ -2590,11 +2591,18 @@ details[open] > .header__submenu {
 .header__menu-item {
   padding: 1.2rem;
   text-decoration: none;
-  color: rgba(var(--color-foreground), 0.75);
+  /* color: rgba(var(--color-foreground), 0.75); */
+  color: #000;
+  font-weight: 600;
+}
+.header__menu-item span {
+ 
+  font-weight: 600 !important;
 }
 
 .header__menu-item:hover {
-  color: rgb(var(--color-foreground));
+  /* color: rgb(var(--color-foreground)); */
+  color: #008080;
 }
 
 .header__menu-item span {
@@ -2620,7 +2628,7 @@ details[open] > .header__menu-item .icon-caret {
 
 .header__active-menu-item {
   transition: text-decoration-thickness var(--duration-short) ease;
-  color: rgb(var(--color-foreground));
+  /* color: rgb(var(--color-foreground)); */
   text-decoration: underline;
   text-underline-offset: 0.3rem;
 }
@@ -2726,9 +2734,10 @@ details-disclosure > details {
 }
 
 .gradient {
-  background: rgb(var(--color-background));
+  /* background: rgb(var(--color-background));
   background: var(--gradient-background);
-  background-attachment: fixed;
+  background-attachment: fixed; */
+  background: #FFF;
 }
 
 @media screen and (forced-colors: active) {
