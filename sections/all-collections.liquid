@@ -1,0 +1,38 @@
+<div>
+    <div>
+        {% for product in collections %}
+          <a href="{{product.url}}">{{product.title}}</a>
+          {% if product.image.src != blank %}
+            <img src="{{product.image.src | img_url: 'medium'}}"/>
+            {% else %}
+                {{'image' | placeholder_svg_tag}}
+          {% endif %}
+        {% endfor %}
+      </div>
+</div>
+{% schema %}
+{
+    "name":"All Collections",
+    "tag":"section",
+   "settings": [
+        {
+           "type": "collection",
+           "id":"collection_id",
+           "label":"select collection"
+        },
+        {
+            "type": "range",
+            "id": "type_collection",
+            "label": "select type",
+            "default":1,
+            "min":1,
+            "max":10
+        }
+   ],
+    "presets":[
+        {
+            "name":"All Collections" 
+        }
+    ]
+}
+{% endschema %}
