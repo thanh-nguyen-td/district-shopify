@@ -144,6 +144,24 @@
         "padding_bottom": 36
       }
     },
+    "16639209091bf2f7fc": {
+      "type": "show-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-09-23_at_15.17.44.png",
+        "img_link": "",
+        "max_width": true,
+        "max_width_img": false
+      }
+    },
+    "1663919320f0f36a57": {
+      "type": "show-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-09-23_at_14.36.32.png",
+        "img_link": "",
+        "max_width": true,
+        "max_width_img": true
+      }
+    },
     "featured-collection-0": {
       "type": "featured-collection",
       "settings": {
@@ -576,20 +594,14 @@
         "padding_top": 60,
         "padding_bottom": 0
       }
-    },
-    "1663919320f0f36a57": {
-      "type": "show-image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-09-23_at_14.36.32.png",
-        "img_link": "",
-        "max_width": true
-      }
     }
   },
   "order": [
     "slideshow",
     "166391700202e198c8",
     "16639171260ced08ea",
+    "16639209091bf2f7fc",
+    "1663919320f0f36a57",
     "featured-collection-0",
     "multicolumn-0",
     "image-with-text-0",
@@ -600,7 +612,6 @@
     "rich-text",
     "multicolumn-1",
     "featured-blog",
-    "newsletter",
-    "1663919320f0f36a57"
+    "newsletter"
   ]
 }
