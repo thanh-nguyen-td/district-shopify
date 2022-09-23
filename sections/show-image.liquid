@@ -6,7 +6,7 @@
 <div class="{%if section.settings.max_width != true%}page-width{% endif %}">
    {% if section.settings.image != blank %}
        <a href="{{section.settings.img_link}}">
-            <img height="100%" src="{{section.settings.image | img_url: 'grande'}}"/>
+            <img {% if section.settings.max_width_img == true %}width="100%"{% endif %} src="{{section.settings.image | img_url: 'master'}}"/>
        </a>
     {% else %}
         {{ 'image' | placeholder_svg_tag: 'h-img' }}
@@ -33,6 +33,12 @@
             "id": "max_width",
             "default": true,
             "label": "max width"
+        },
+        {
+            "type": "checkbox",
+            "id": "max_width_img",
+            "default": true,
+            "label": "max width image"
         }
    ],
     "presets":[
