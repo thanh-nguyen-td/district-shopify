@@ -10,7 +10,14 @@
     Usage:
     {% render 'card-collection' %}
 {% endcomment %}
-
+{% style %}
+.card--card{
+  border:0px !important
+}
+.card__heading{
+  text-align:center
+}
+{% endstyle %}
 {%- liquid
   assign ratio = 1
   if card_collection.featured_image and media_aspect_ratio == 'portrait'
@@ -89,7 +96,7 @@
               {%- else -%}
                 {{ 'onboarding.collection_title' | t }}
               {%- endif -%}
-              {%- if card_collection.featured_image or card_collection.description == blank -%}<span class="icon-wrap">{% render 'icon-arrow' %}</span>{% endif %}
+              <!-- {%- if card_collection.featured_image or card_collection.description == blank -%}<span class="icon-wrap">{% render 'icon-arrow' %}</span>{% endif %} -->
             </a>
           </h3>
           {%- if card_collection.featured_image == nil and card_collection.description != blank -%}
