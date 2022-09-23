@@ -144,13 +144,6 @@
         "padding_bottom": 36
       }
     },
-    "166391699418ab4c77": {
-      "type": "all-collections",
-      "settings": {
-        "collection_id": "",
-        "type_collection": 1
-      }
-    },
     "featured-collection-0": {
       "type": "featured-collection",
       "settings": {
@@ -589,7 +582,6 @@
     "slideshow",
     "166391700202e198c8",
     "16639171260ced08ea",
-    "166391699418ab4c77",
     "featured-collection-0",
     "multicolumn-0",
     "image-with-text-0",
