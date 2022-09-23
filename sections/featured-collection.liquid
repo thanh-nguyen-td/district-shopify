@@ -104,19 +104,7 @@
     {%- endif -%}
   </div>
 </div>
-<div>
-  {% for product in collections %}
-    <a href="{{product.url}}">{{product.title}}</a>
-    {% if product.image.src != blank %}
-      <img src="{{product.image.src | img_url: 'medium'}}"/>
-    {% endif %}
-  {% endfor %}
-</div>
-<!-- <script type="text/javascript">
-  function reply_click(params) {
-    console.log('params1111', params)
-  }
-</script> -->
+
 {% schema %}
 {
   "name": "t:sections.featured-collection.name",
