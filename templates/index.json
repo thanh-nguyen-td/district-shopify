@@ -576,6 +576,14 @@
         "padding_top": 60,
         "padding_bottom": 0
       }
+    },
+    "1663919320f0f36a57": {
+      "type": "show-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-09-23_at_14.36.32.png",
+        "img_link": "",
+        "max_width": true
+      }
     }
   },
   "order": [
@@ -592,6 +600,7 @@
     "rich-text",
     "multicolumn-1",
     "featured-blog",
-    "newsletter"
+    "newsletter",
+    "1663919320f0f36a57"
   ]
 }
