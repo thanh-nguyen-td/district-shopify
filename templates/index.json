@@ -493,6 +493,94 @@
         "show_row_1": false
       }
     },
+    "16640788967c1b2726": {
+      "type": "list-img-full-width",
+      "blocks": {
+        "903572d5-f428-4410-9374-e32669b9b778": {
+          "type": "add_img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/beige_1100x_1100x_d8941c67-8f25-4820-8973-209550bc06b5.webp",
+            "link_img": "",
+            "content": "Multimedia collage"
+          }
+        },
+        "78b3c223-d022-486f-98e1-a3744030013b": {
+          "type": "add_img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/beige_1100x_1100x_d8941c67-8f25-4820-8973-209550bc06b5.webp",
+            "link_img": "",
+            "content": "So grateful for every one of who has purchased Gather and gave us an incredible start to this new product. Let's keep the momentum going"
+          }
+        },
+        "6201b7e4-b30b-4bef-a046-13cabc171e09": {
+          "type": "add_img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/292775071_182955894115842_1682070869794039945_n.jpg",
+            "link_img": "",
+            "content": "So grateful for every one of who has purchased Gather and gave us an incredible start to this new product. Let's keep the momentum"
+          }
+        },
+        "a792371e-1ed1-4d4b-ab6d-79b1ac9fab62": {
+          "type": "add_img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/292775071_182955894115842_1682070869794039945_n.jpg",
+            "link_img": "",
+            "content": "Multimedia collage"
+          }
+        },
+        "10c4ae56-6d67-4ecf-b5e5-55b2c4c2e032": {
+          "type": "add_img",
+          "settings": {
+            "link_img": "",
+            "content": "Multimedia collage"
+          }
+        },
+        "22fa6958-16d8-4584-bf3d-eb3b8406d211": {
+          "type": "add_img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/beige_1100x_1100x_d8941c67-8f25-4820-8973-209550bc06b5.webp",
+            "link_img": "",
+            "content": "Multimedia collage"
+          }
+        }
+      },
+      "block_order": [
+        "903572d5-f428-4410-9374-e32669b9b778",
+        "78b3c223-d022-486f-98e1-a3744030013b",
+        "6201b7e4-b30b-4bef-a046-13cabc171e09",
+        "a792371e-1ed1-4d4b-ab6d-79b1ac9fab62",
+        "10c4ae56-6d67-4ecf-b5e5-55b2c4c2e032",
+        "22fa6958-16d8-4584-bf3d-eb3b8406d211"
+      ],
+      "settings": {
+        "img_num": 6,
+        "title": "Shop the look",
+        "text_button": "Follow us",
+        "button_link": ""
+      }
+    },
+    "16641015583d4ca377": {
+      "type": "video",
+      "settings": {
+        "heading": "Iceland Adventure",
+        "heading_size": "h2",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1664101692fbc41925": {
+      "type": "show-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-09-25_at_17.34.10.png",
+        "img_link": "",
+        "max_width": false,
+        "max_width_img": true
+      }
+    },
     "rich-text": {
       "type": "rich-text",
       "blocks": {
@@ -508,11 +596,23 @@
             "heading": "<p>Describe what sets your brand apart from your competitors.<\/p>",
             "heading_size": "h1"
           }
+        },
+        "701a1826-aca5-4966-8550-8f49f9bf7428": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
         }
       },
       "block_order": [
         "text",
-        "heading"
+        "heading",
+        "701a1826-aca5-4966-8550-8f49f9bf7428"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -520,69 +620,6 @@
         "color_scheme": "accent-2",
         "full_width": true,
         "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "multicolumn-1": {
-      "type": "multicolumn",
-      "blocks": {
-        "column-0": {
-          "type": "column",
-          "settings": {
-            "title": "Multicolumn",
-            "text": "<p>Use a combination of images and text to share your brand values. <\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column-1": {
-          "type": "column",
-          "settings": {
-            "title": "Multicolumn",
-            "text": "<p>Use a combination of images and text to share your brand values. <\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column-2": {
-          "type": "column",
-          "settings": {
-            "title": "Multicolumn",
-            "text": "<p>Use a combination of images and text to share your brand values. <\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column-3": {
-          "type": "column",
-          "settings": {
-            "title": "Multicolumn",
-            "text": "<p>Use a combination of images and text to share your brand values. <\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column-0",
-        "column-1",
-        "column-2",
-        "column-3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "accent-2",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 0,
         "padding_bottom": 60
       }
     },
@@ -599,105 +636,8 @@
         "show_date": true,
         "show_author": false,
         "show_view_all": true,
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "newsletter": {
-      "type": "newsletter",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Subscribe to our emails",
-            "heading_size": "h1"
-          }
-        },
-        "paragraph": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
-          }
-        },
-        "email-form": {
-          "type": "email_form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "paragraph",
-        "email-form"
-      ],
-      "settings": {
-        "color_scheme": "accent-2",
-        "full_width": true,
-        "padding_top": 60,
-        "padding_bottom": 0
-      }
-    },
-    "16640788967c1b2726": {
-      "type": "list-img-full-width",
-      "blocks": {
-        "903572d5-f428-4410-9374-e32669b9b778": {
-          "type": "add_img",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/beige_1100x_1100x_d8941c67-8f25-4820-8973-209550bc06b5.webp",
-            "button_link": "",
-            "content": "Multimedia collage"
-          }
-        },
-        "78b3c223-d022-486f-98e1-a3744030013b": {
-          "type": "add_img",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/beige_1100x_1100x_d8941c67-8f25-4820-8973-209550bc06b5.webp",
-            "button_link": "",
-            "content": "So grateful for every one of who has purchased Gather and gave us an incredible start to this new product. Let's keep the momentum going"
-          }
-        },
-        "6201b7e4-b30b-4bef-a046-13cabc171e09": {
-          "type": "add_img",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/292775071_182955894115842_1682070869794039945_n.jpg",
-            "button_link": "",
-            "content": "So grateful for every one of who has purchased Gather and gave us an incredible start to this new product. Let's keep the momentum"
-          }
-        },
-        "a792371e-1ed1-4d4b-ab6d-79b1ac9fab62": {
-          "type": "add_img",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/292775071_182955894115842_1682070869794039945_n.jpg",
-            "button_link": "",
-            "content": "Multimedia collage"
-          }
-        },
-        "10c4ae56-6d67-4ecf-b5e5-55b2c4c2e032": {
-          "type": "add_img",
-          "settings": {
-            "button_link": "",
-            "content": "Multimedia collage"
-          }
-        },
-        "22fa6958-16d8-4584-bf3d-eb3b8406d211": {
-          "type": "add_img",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/beige_1100x_1100x_d8941c67-8f25-4820-8973-209550bc06b5.webp",
-            "button_link": "",
-            "content": "Multimedia collage"
-          }
-        }
-      },
-      "block_order": [
-        "903572d5-f428-4410-9374-e32669b9b778",
-        "78b3c223-d022-486f-98e1-a3744030013b",
-        "6201b7e4-b30b-4bef-a046-13cabc171e09",
-        "a792371e-1ed1-4d4b-ab6d-79b1ac9fab62",
-        "10c4ae56-6d67-4ecf-b5e5-55b2c4c2e032",
-        "22fa6958-16d8-4584-bf3d-eb3b8406d211"
-      ],
-      "settings": {
-        "img_num": 6
+        "padding_top": 12,
+        "padding_bottom": 20
       }
     }
   },
@@ -715,10 +655,10 @@
     "image-with-text-3",
     "featured-collection-1",
     "1664078094d9093fb8",
+    "16640788967c1b2726",
+    "16641015583d4ca377",
+    "1664101692fbc41925",
     "rich-text",
-    "multicolumn-1",
-    "featured-blog",
-    "newsletter",
-    "16640788967c1b2726"
+    "featured-blog"
   ]
 }
