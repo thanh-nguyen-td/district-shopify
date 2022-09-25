@@ -15,10 +15,16 @@
         "max_width": true,
         "max_width_img": true
       }
+    },
+    "166412417593d24f22": {
+      "type": "about-page-contetn",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "1664117387cd48021f"
+    "1664117387cd48021f",
+    "166412417593d24f22"
   ]
 }
