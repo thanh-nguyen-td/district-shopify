@@ -636,6 +636,25 @@
         "padding_top": 60,
         "padding_bottom": 0
       }
+    },
+    "16640788967c1b2726": {
+      "type": "list-img-full-width",
+      "blocks": {
+        "903572d5-f428-4410-9374-e32669b9b778": {
+          "type": "add_img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/beige_1100x_1100x_d8941c67-8f25-4820-8973-209550bc06b5.webp",
+            "button_link": "",
+            "content": "Multimedia collage"
+          }
+        }
+      },
+      "block_order": [
+        "903572d5-f428-4410-9374-e32669b9b778"
+      ],
+      "settings": {
+        "img_num": 6
+      }
     }
   },
   "order": [
@@ -655,6 +674,7 @@
     "rich-text",
     "multicolumn-1",
     "featured-blog",
-    "newsletter"
+    "newsletter",
+    "16640788967c1b2726"
   ]
 }
