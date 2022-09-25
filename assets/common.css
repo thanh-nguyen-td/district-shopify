@@ -1,10 +1,18 @@
-.list-img-container{
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+.list-img-container {
+    height: 100%;
+}
+.list-img-container h2{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.gap-0{
+    grid-gap:0px !important
 }
 .child-container{
-    height: 250px;
-    background: red;
+    height: 300px;
+    padding: 0;
 }
+
 .wrap-content {
     height: 100%;
     position: relative;
@@ -15,16 +23,27 @@
     position: absolute;
     z-index: 0;
     transition: 0.3s;
-    height: 250px;
+    height: 300px;
+    width: 100%;
 }
 .content{
     position: absolute;
     opacity: 0;
+    padding: 5px;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
 .child-container:hover .content{
-    opacity: 0.2;
-    background: PINK;
+    opacity: 0.9;
+    background: #008080;
+    height: 100%;
+    width: 100%;
+   
+}
+.child-container:hover .content p{
+    opacity: 1;
+    color: #fff;
 }
 .child-container:hover .custom-img{
     transform: scale(1.1);

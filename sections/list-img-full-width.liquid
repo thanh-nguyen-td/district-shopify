@@ -1,14 +1,15 @@
 {{'common.css' | asset_url | stylesheet_tag}}
-<div class="">
-   <div class="row">
+<div class="list-img-container">
+    <h2 style="text-align: center;font-family: Archivo Narrow, sans-serif;">Shop the look</h2>
+   <div class="row gap-0">
         {% for block in section.blocks %}
             {% if forloop.index <= section.settings.img_num %}
                 <div class="child-container col" >
-                  <div style=" background: pink;" class="wrap-content">
+                  <div class="wrap-content">
                     {% if block.settings.image != blank %}
                     <img class="custom-img"  src="{{block.settings.image | img_url: 'medium'}}"/>
                     {% else %}
-                        {{'img' | placeholder_svg_tag: 'custom-img'}}
+                        {{'image' | placeholder_svg_tag: 'custom-img'}}
                     {% endif %}
                     <div class="content">
                         <p class="demo">{{block.settings.content}}</p>
@@ -17,6 +18,9 @@
                 </div>
             {% endif %}
         {% endfor %}
+   </div>
+   <div style="margin: 30px auto;display: flex; justify-content: center;align-items: center;">
+    {% render 'custom-button', type:1, text_button:section.settings.text_button,button_link:section.settings.button_link %}
    </div>
 </div>
 {% schema %}
@@ -31,12 +35,29 @@
             "default":6,
             "min":2,
             "max":8
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default":"Shop the look"
+        },
+        {
+            "type": "text",
+            "id": "text_button",
+            "label": "Text Button",
+            "default":"Follow us"
+        },
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": "button link"
         }
    ],
    "blocks":[
         {
             "type":"add_img",
-            "name":"Navigator",
+            "name":"Add Img",
             "settings":[
                 {
                     "type": "image_picker",
@@ -45,14 +66,14 @@
                 },
                 {
                     "type": "url",
-                    "id": "button_link",
-                    "label": "button_link"
+                    "id": "link_img",
+                    "label": "img link"
                 },
                 {
                     "type": "text",
                     "id": "content",
                     "default": "Multimedia collage",
-                    "label": "t:sections.collage.settings.heading.label"
+                    "label": "Content"
                 }
             ]
         }
