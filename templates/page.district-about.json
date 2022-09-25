@@ -2,9 +2,10 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 28
+        "padding_top": 44,
+        "padding_bottom": 56
       }
     },
     "1664117387cd48021f": {
