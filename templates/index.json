@@ -346,23 +346,16 @@
         "max_width_img": true
       }
     },
-    "rich-text": {
+    "1664102332104f2cc1": {
       "type": "rich-text",
       "blocks": {
-        "text": {
+        "1664102332cc054cba-1": {
           "type": "text",
           "settings": {
-            "text": "<p>INTRODUCE YOUR BRAND<\/p>"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
           }
         },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Describe what sets your brand apart from your competitors.<\/p>",
-            "heading_size": "h1"
-          }
-        },
-        "701a1826-aca5-4966-8550-8f49f9bf7428": {
+        "1664102332cc054cba-2": {
           "type": "button",
           "settings": {
             "button_label": "Button label",
@@ -375,17 +368,16 @@
         }
       },
       "block_order": [
-        "text",
-        "heading",
-        "701a1826-aca5-4966-8550-8f49f9bf7428"
+        "1664102332cc054cba-1",
+        "1664102332cc054cba-2"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "accent-2",
+        "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "featured-blog": {
@@ -418,7 +410,7 @@
     "16640788967c1b2726",
     "16641015583d4ca377",
     "1664101692fbc41925",
-    "rich-text",
+    "1664102332104f2cc1",
     "featured-blog"
   ]
 }
