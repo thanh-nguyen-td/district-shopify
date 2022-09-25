@@ -1,0 +1,31 @@
+.list-img-container{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.child-container{
+    height: 250px;
+    background: red;
+}
+.wrap-content {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.custom-img{
+    position: absolute;
+    z-index: 0;
+    transition: 0.3s;
+    height: 250px;
+}
+.content{
+    position: absolute;
+    opacity: 0;
+}
+
+.child-container:hover .content{
+    opacity: 0.2;
+    background: PINK;
+}
+.child-container:hover .custom-img{
+    transform: scale(1.1);
+}

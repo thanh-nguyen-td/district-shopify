@@ -1,9 +1,23 @@
-<div>
-    {% for block in section.blocks %}
-        <div>
-            {{block.settings.content}}
-        </div>
-    {% endfor %}
+{{'common.css' | asset_url | stylesheet_tag}}
+<div class="">
+   <div class="row">
+        {% for block in section.blocks %}
+            {% if forloop.index <= section.settings.img_num %}
+                <div class="child-container col" >
+                  <div style=" background: pink;" class="wrap-content">
+                    {% if block.settings.image != blank %}
+                    <img class="custom-img"  src="{{block.settings.image | img_url: 'medium'}}"/>
+                    {% else %}
+                        {{'img' | placeholder_svg_tag: 'custom-img'}}
+                    {% endif %}
+                    <div class="content">
+                        <p class="demo">{{block.settings.content}}</p>
+                    </div>
+                  </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+   </div>
 </div>
 {% schema %}
 {
