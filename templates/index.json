@@ -647,10 +647,19 @@
             "button_link": "",
             "content": "Multimedia collage"
           }
+        },
+        "78b3c223-d022-486f-98e1-a3744030013b": {
+          "type": "add_img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/beige_1100x_1100x_d8941c67-8f25-4820-8973-209550bc06b5.webp",
+            "button_link": "",
+            "content": "So grateful for every one of who has purchased Gather and gave us an incredible start to this new product. Let's keep the momentum going"
+          }
         }
       },
       "block_order": [
-        "903572d5-f428-4410-9374-e32669b9b778"
+        "903572d5-f428-4410-9374-e32669b9b778",
+        "78b3c223-d022-486f-98e1-a3744030013b"
       ],
       "settings": {
         "img_num": 6
