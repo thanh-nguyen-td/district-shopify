@@ -158,20 +158,12 @@
               "heading": "Our mission",
               "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
             }
-          },
-          "image": {
-            "type": "image",
-            "settings": {
-              "image_width": 100,
-              "alignment": "center"
-            }
           }
         },
         "block_order": [
           "footer-0",
           "footer-1",
-          "text",
-          "image"
+          "text"
         ],
         "settings": {
           "color_scheme": "inverse",
@@ -200,7 +192,10 @@
           "color_scheme": "inverse"
         }
       }
-    }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {
