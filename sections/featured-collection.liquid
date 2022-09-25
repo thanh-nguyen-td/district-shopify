@@ -52,7 +52,8 @@
          <div style="display: grid;  grid-template-columns:1fr 1fr ;">
           <h2 class="title {{ section.settings.heading_size }}">{{ section.settings.title | escape }}</h2>
           <div style="display:flex;justify-content:end;align-items:end">
-            <a style="text-decoration: none;border:2px solid #000; color:#000;padding:0 20px">{{section.settings.button_row_1}}</a>
+            {% render 'custom-button', text_button:section.settings.button_row_1 %}
+            <!-- <a style="text-decoration: none;border:2px solid #000; color:#000;padding:0 20px">{{section.settings.button_row_1}}</a> -->
           </div>
          </div>
         {%- endif -%}
@@ -66,9 +67,10 @@
         {% if section.settings.show_row_1 == true %}
           <div style="width: 45%;">
             <div style="display: flex;justify-content:center;align-items:center; height:70%;flex-direction: column;text-align: center;">
-              <p>{{section.settings.title_row_1}}</p>
-              <p>{{section.settings.content_row_1}}</p>
-              <a style="text-decoration: none;border:2px solid #000; color:#000;padding:0px 20px">{{section.settings.button_row_1}}</a>
+              <p  style="font-size: 18px; font-weight: 600;">{{section.settings.title_row_1}}</p>
+              <p style="font-size: 14px;">{{section.settings.content_row_1}}</p>
+              {% render 'custom-button', text_button:section.settings.button_row_1 %}
+              <!-- <a style="text-decoration: none;border:2px solid #000; color:#000;padding:0px 20px">{{section.settings.button_row_1}}</a> -->
             </div>
           </div>
         {% endif %}

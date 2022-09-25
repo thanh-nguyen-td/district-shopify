@@ -15,6 +15,9 @@
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
+.list-social__link{
+  color:#000
+}
   .footer {
     margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
   }
@@ -53,12 +56,12 @@
           {%- for block in section.blocks -%}
             <div class="footer-block grid__item{% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
-                <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
+                <h2 class="footer-block__heading" style="color:#000">{{- block.settings.heading | escape -}}</h2>
               {%- endif -%}
 
               {%- case block.type -%}
                 {%- when 'text' -%}
-                  <div class="footer-block__details-content rte">
+                  <div class="footer-block__details-content rte"  style="color:#000">
                     {{ block.settings.subtext }}
                   </div>
                 {%- when 'link_list' -%}
@@ -66,7 +69,7 @@
                     <ul class="footer-block__details-content list-unstyled">
                       {%- for link in block.settings.menu.links -%}
                         <li>
-                          <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
+                          <a href="{{ link.url }}"  style="color:#000" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
                             {{ link.title }}
                           </a>
                         </li>
@@ -100,7 +103,7 @@
         {%- if section.settings.newsletter_enable -%}
           <div class="footer-block__newsletter">
             {%- if section.settings.newsletter_heading != blank -%}
-              <h2 class="footer-block__heading">{{ section.settings.newsletter_heading | escape }}</h2>
+              <h2 class="footer-block__heading"  style="color:#000">{{ section.settings.newsletter_heading | escape }}</h2>
             {%- endif -%}
             {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
               <input type="hidden" name="contact[tags]" value="newsletter">
@@ -148,7 +151,7 @@
           <ul class="footer__list-social list-unstyled list-social" role="list">
             {%- if settings.social_twitter_link != blank -%}
               <li class="list-social__item">
-                <a href="{{ settings.social_twitter_link }}" class="link list-social__link" >
+                <a href="{{ settings.social_twitter_link }}"  class="link list-social__link" >
                   {%- render 'icon-twitter' -%}
                   <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
                 </a>
