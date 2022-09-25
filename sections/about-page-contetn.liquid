@@ -1,10 +1,26 @@
-<div></div>
+<div class="page-width">
+   <p style="font-size:14px;font-weight: 500;">{{section.settings.heading}}</p>
+   <div style="border-left:3px solid #cacaca; padding-left: 20px;">
+        <p style="font-size:14px;font-style: italic;">{{section.settings.content}}</p>
+   </div>
+</div>
 {% schema %}
 { 
     "name":"About Page",
     "tag":"section",
    "settings": [
-    
+        {
+            "type": "text",
+            "id": "heading",
+            "default": "We would like to thank our friend Jeff Sheldon of Ugmonk for giving us the permission to use his products for this demo store. ",
+            "label": "heading"
+        },
+        {
+            "type": "text",
+            "id": "content",
+            "default": "Ever since the beginning, Ugmonk has been about my passion for design. I quickly discovered that there was a lot more to running a brand but it’s still the creation process that fuels me to keep going. Ugmonk will always remain a design-driven brand where design and quality come first.” —Jeff Sheldon",
+            "label": "Content"
+        }
    ],
     "presets":[
         {

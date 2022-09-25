@@ -19,9 +19,26 @@
 {%- paginate blog.articles by 6 -%}
   <div class="main-blog page-width section-{{ section.id }}-padding">
     <h1 class="title--primary">{{ blog.title | escape }}</h1>
-
+    <div>
+      <div style="width: 100%;">
+        {% assign item = blog.articles[0]%}
+        <img style="width: 100%;" src="{{item.image.src | img_url: 'master'}}"/>
+        <div style="margin-top: 20px;text-align: center;">
+          <h2 style="text-align: center;margin-bottom: 0;">
+            <a href="{{ item.url }}" class="full-unstyled-link">
+              {{ item.title | truncate: 50 | escape }}
+            </a>
+          </h2>
+          <span class="circle-divider" style="font-size: 13px;">{{ item.published_at | time_tag: format: 'date' }}</span>
+         <div style="font-size: 13px;margin-top: 20px;border-bottom: 0.5px solid #999;padding-bottom: 20px;margin-bottom: 20px;">
+          {{ item.content | strip_html | truncatewords: 30 }}
+         </div>
+        </div>
+      </div>
+    </div>
     <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
       {%- for article in blog.articles -%}
+        {% if forloop.index >= 1 %}
         <div class="blog-articles__article article">
           {%- render 'article-card',
             article: article,
@@ -33,6 +50,7 @@
             show_excerpt: true 
           -%}
         </div>
+        {% endif %}
       {%- endfor -%}
     </div>
 

@@ -15,7 +15,15 @@
     Usage:
     {% render 'article-card' blog: blog, article: article, show_image: section.settings.show_image %}
 {% endcomment %}
-
+{% style%}
+.card--card{
+  border:0px
+}
+.blog-articles .article-card .card__information{
+  margin-top:20px;
+  text-align:center
+}
+{% endstyle%}
 {%- if article and article != empty -%}
   {%- liquid
     assign ratio = 1
