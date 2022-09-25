@@ -438,9 +438,9 @@
                         {%- for childlink in link.links -%}
                           <li>
                             {%- if childlink.links == blank -%}
-                              <!-- <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                              <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                                 {{ childlink.title | escape }}
-                              </a> -->
+                              </a>
                             {%- else -%}
                               <details id="Details-HeaderSubMenu-{{ forloop.index }}">
                                 <summary class="header__menu-item link link--text list-menu__item focus-inset caption-large">
@@ -450,9 +450,9 @@
                                 <ul id="HeaderMenu-SubMenuList-{{ forloop.index }}" class="header__submenu list-menu motion-reduce">
                                   {%- for grandchildlink in childlink.links -%}
                                     <li>
-                                      <!-- <a href="{{ grandchildlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                                      <a href="{{ grandchildlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
                                         {{ grandchildlink.title | escape }}
-                                      </a> -->
+                                      </a>
                                     </li>
                                   {%- endfor -%}
                                 </ul>
@@ -525,9 +525,9 @@
         <details>
           <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
             <span>
-              <!-- <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+              <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation">
                 <use href="#icon-search">
-              </svg> -->
+              </svg>
               <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false" role="presentation">
                 <use href="#icon-close">
               </svg>
@@ -563,9 +563,9 @@
                     <label class="field__label" for="Search-In-Modal">{{ 'general.search.search' | t }}</label>
                     <input type="hidden" name="options[prefix]" value="last">
                     <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
-                      <!-- <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                      <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
                         <use href="#icon-search">
-                      </svg> -->
+                      </svg>
                     </button>
                   </div>
 
