@@ -194,38 +194,6 @@
         "show_row_1": true
       }
     },
-    "featured-collection-1": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "portrait",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": true,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 60,
-        "title_row_1": "Premium Tees",
-        "content_row_1": "Featuring premium materials and simple designs. Build your own wardrobe where every detail is considered",
-        "button_row_1": "Shop all Tees",
-        "link_button_row_1": "",
-        "show_row_1": false
-      }
-    },
     "1664078094d9093fb8": {
       "type": "featured-collection",
       "settings": {
@@ -405,7 +373,6 @@
     "16639209091bf2f7fc",
     "1663919320f0f36a57",
     "featured-collection-0",
-    "featured-collection-1",
     "1664078094d9093fb8",
     "16640788967c1b2726",
     "16641015583d4ca377",
