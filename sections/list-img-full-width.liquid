@@ -1,0 +1,52 @@
+<div>
+    {% for block in section.blocks %}
+        <div>
+            {{block.settings.content}}
+        </div>
+    {% endfor %}
+</div>
+{% schema %}
+{
+    "name":"List Img Full Width",
+    "tag":"section",
+   "settings": [
+        {
+            "type": "range",
+            "id": "img_num",
+            "label": "select img",
+            "default":6,
+            "min":2,
+            "max":8
+        }
+   ],
+   "blocks":[
+        {
+            "type":"add_img",
+            "name":"Navigator",
+            "settings":[
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "select_img"
+                },
+                {
+                    "type": "url",
+                    "id": "button_link",
+                    "label": "button_link"
+                },
+                {
+                    "type": "text",
+                    "id": "content",
+                    "default": "Multimedia collage",
+                    "label": "t:sections.collage.settings.heading.label"
+                }
+            ]
+        }
+    ],
+    "presets":[
+        {
+            "name":"List Img Full Width" 
+        }
+    ]
+}
+{% endschema %}

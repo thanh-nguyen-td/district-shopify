@@ -49,7 +49,12 @@
   <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
       <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
         {%- if section.settings.title != blank -%}
+         <div style="display: grid;  grid-template-columns:1fr 1fr ;">
           <h2 class="title {{ section.settings.heading_size }}">{{ section.settings.title | escape }}</h2>
+          <div style="display:flex;justify-content:end;align-items:end">
+            <a style="text-decoration: none;border:2px solid #000; color:#000;padding:0 20px">{{section.settings.button_row_1}}</a>
+          </div>
+         </div>
         {%- endif -%}
         {%- if section.settings.description != blank or section.settings.show_description and section.settings.collection.description != empty -%}
           <div class="collection__description {{ section.settings.description_style }}">{%- if section.settings.show_description -%}{{ section.settings.collection.description }}{%- else -%}{{ section.settings.description }}{% endif %}</div>
@@ -59,11 +64,11 @@
     <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %}{% if show_mobile_slider == false %} page-width{% endif %}{% if show_desktop_slider == false and section.settings.full_width == false %} page-width-desktop{% endif %}{% if show_desktop_slider %} slider-component-desktop{% endif %}">
       <ul id="Slider-{{ section.id }}" class="grid product-grid contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ section.settings.columns_desktop }}-col-desktop{% if section.settings.collection == blank %} grid--2-col-tablet-down{% else %} grid--{{ section.settings.columns_mobile }}-col-tablet-down{% endif %}{% if show_mobile_slider or show_desktop_slider %} slider{% if show_desktop_slider %} slider--desktop{% endif %}{% if show_mobile_slider %} slider--tablet grid--peek{% endif %}{% endif %}" role="list" aria-label="{{ 'sections.featured_collection.slider' | t }}">
         {% if section.settings.show_row_1 == true %}
-          <div style="width: 45%;background:red">
-            <div>
-              <p></p>
-              <p></p>
-              <a style="text-decoration: none;border:2px solid #000; color:#000;padding:10px 30px">{{section.settings.button_row_1}}</a>
+          <div style="width: 45%;">
+            <div style="display: flex;justify-content:center;align-items:center; height:70%;flex-direction: column;text-align: center;">
+              <p>{{section.settings.title_row_1}}</p>
+              <p>{{section.settings.content_row_1}}</p>
+              <a style="text-decoration: none;border:2px solid #000; color:#000;padding:0px 20px">{{section.settings.button_row_1}}</a>
             </div>
           </div>
         {% endif %}
@@ -83,7 +88,7 @@
         {%- else -%}
           {%- for i in (1..4) -%}
             <li class="grid__item">
-              <!-- {% render 'card-product', show_vendor: section.settings.show_vendor %} -->
+              {% render 'card-product', show_vendor: section.settings.show_vendor %}
             </li>
           {%- endfor -%}
         {%- endfor -%}
