@@ -671,13 +671,30 @@
             "button_link": "",
             "content": "Multimedia collage"
           }
+        },
+        "10c4ae56-6d67-4ecf-b5e5-55b2c4c2e032": {
+          "type": "add_img",
+          "settings": {
+            "button_link": "",
+            "content": "Multimedia collage"
+          }
+        },
+        "22fa6958-16d8-4584-bf3d-eb3b8406d211": {
+          "type": "add_img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/beige_1100x_1100x_d8941c67-8f25-4820-8973-209550bc06b5.webp",
+            "button_link": "",
+            "content": "Multimedia collage"
+          }
         }
       },
       "block_order": [
         "903572d5-f428-4410-9374-e32669b9b778",
         "78b3c223-d022-486f-98e1-a3744030013b",
         "6201b7e4-b30b-4bef-a046-13cabc171e09",
-        "a792371e-1ed1-4d4b-ab6d-79b1ac9fab62"
+        "a792371e-1ed1-4d4b-ab6d-79b1ac9fab62",
+        "10c4ae56-6d67-4ecf-b5e5-55b2c4c2e032",
+        "22fa6958-16d8-4584-bf3d-eb3b8406d211"
       ],
       "settings": {
         "img_num": 6
