@@ -93,13 +93,21 @@
                       {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                     {%- endif -%}
                   </div>
+                {%- when 'email' -%}
+                  <div>
+                    email
+                  </div>
+                  {%- when 'social_network' -%}
+                  <div>
+                    social_network
+                  </div>
                 {%- endcase -%}
             </div>
           {%- endfor -%}
         </div>
       {%- endif -%}
 
-      <div class="footer-block--newsletter">
+      <!-- <div class="footer-block--newsletter">
         {%- if section.settings.newsletter_enable -%}
           <div class="footer-block__newsletter">
             {%- if section.settings.newsletter_heading != blank -%}
@@ -145,7 +153,7 @@
               {%- endif -%}
             {%- endform -%}
           </div>
-        {%- endif -%}
+        {%- endif -%} -->
 
         {%- if section.settings.show_social -%}
           <ul class="footer__list-social list-unstyled list-social" role="list">
@@ -475,6 +483,69 @@
           "default": "center"
         }
       ]
+    },
+    {
+      "type":"email",
+     "name": "Email",
+    "settings": [
+          {
+            "type":"text",
+            "id":"heading",
+            "default":"Newsletter",
+            "label":"Heading"
+          },
+          {
+            "type":"text",
+            "id":"content",
+            "default":"Subscribe to be the first to hear about our exclusive offers and latest arrivals.",
+            "label":"Content"
+          },
+          {
+            "type":"checkbox",
+            "id":"is_input_email",
+            "default":true,
+            "label":"Show Input Email"
+          },
+          {
+            "type":"url",
+            "id":"link_seen_email",
+            "label":"Link Seen Email"
+          }
+      ]
+    },
+    {
+      "type":"social_network",
+      "name":"SocialNetwork",
+     "settings": [
+        {
+          "type":"text",
+          "id":"heading",
+          "default":"Get In Touch",
+          "label":"Heading"
+        },
+        {
+          "type":"text",
+          "id":"text_button_left",
+          "default":"1.877.555.9300",
+          "label":"Text Button Left"
+        },
+        {
+          "type":"url",
+          "id":"link_button_left",
+          "label":"Link Button Left"
+        },
+        {
+          "type":"text",
+          "id":"text_button_right",
+          "default":"1.877.555.9300",
+          "label":"Text Button Right"
+        },
+        {
+          "type":"url",
+          "id":"link_button_right",
+          "label":"Link Button Right"
+        }
+     ]
     }
   ],
   "settings": [
