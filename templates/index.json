@@ -6,7 +6,7 @@
         "slide-0": {
           "type": "slide",
           "settings": {
-            "image": "{{ shop.brand.cover_image }}",
+            "image": "shopify:\/\/shop_images\/testament__blog-post-2_1080x_5b298005-485e-4a41-8f15-f289e071189e.webp",
             "heading": "Slideshow",
             "heading_size": "h1",
             "subheading": "Introduce a product or collection you'd like to highlight.",
