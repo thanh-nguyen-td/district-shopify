@@ -636,7 +636,7 @@
 <div style="background: gold;color:#000">
     {% if shop.customer_accounts_enabled %}
       {% if customer %}
-        <a>Account</a>
+         <a href="/account">Account</a>
         {{'log out' | customer_logout_link}}
         {% else %}
           {{'log in' | customer_login_link}}
