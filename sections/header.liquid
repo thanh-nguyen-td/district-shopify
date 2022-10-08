@@ -633,7 +633,21 @@
     </div>
   </header>
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
-
+<div style="background: gold;color:#000">
+    {% if shop.customer_accounts_enabled %}
+      {% if customer %}
+        <a>Account</a>
+        {{'log out' | customer_logout_link}}
+        {% else %}
+          {{'log in' | customer_login_link}}
+          {{' Register' | customer_register_link}}
+      {% endif %}
+      
+    {% endif %}
+    <p>
+      thanh kaka
+    </p>
+  </div>
 {%- if settings.cart_type == "notification" -%}
   {%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
 {%- endif -%}
