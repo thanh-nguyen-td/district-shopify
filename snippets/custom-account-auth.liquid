@@ -19,3 +19,16 @@
     {% endif %}
   </ul>
 </div>
+
+{% comment %}
+  {% if shop.customer_accounts_enabled %}
+      {% if customer %}
+         <a href="/account">Account</a>
+        {{'log out' | customer_logout_link}}
+        {% else %}
+          {{'log in' | customer_login_link}}
+          <p>or</p>
+          {{' Register' | customer_register_link}}
+      {% endif %}
+    {% endif %}
+{% endcomment %}
