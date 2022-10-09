@@ -1,4 +1,4 @@
-<div>
+<div class="custom_auth_container">
   <ul>
      {% if shop.customer_accounts_enabled %}
       {% if customer %}
@@ -19,6 +19,12 @@
     {% endif %}
   </ul>
 </div>
+
+{% style %}
+  .custom_auth_container {
+    backgroud:red
+  }
+{% endstyle %}
 
 {% comment %}
   {% if shop.customer_accounts_enabled %}
