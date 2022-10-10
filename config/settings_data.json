@@ -151,14 +151,14 @@
             "type": "link_list",
             "settings": {
               "heading": "Shop",
-              "menu": "footer"
+              "menu": "footer-menu-district-1"
             }
           },
           "footer-1": {
             "type": "link_list",
             "settings": {
               "heading": "About",
-              "menu": ""
+              "menu": "footer-menu-district-2"
             }
           },
           "9db1e9bf-556a-4682-9be6-dff22be3333c": {
