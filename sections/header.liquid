@@ -190,9 +190,9 @@
                                   {%- for childlink in link.links -%}
                                     <li>
                                       {%- if childlink.links == blank -%}
-                                        <!-- <a href="{{ childlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                                       <a href="{{ childlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                                           {{ childlink.title | escape }}
-                                        </a> -->
+                                        </a>
                                       {%- else -%}
                                         <details id="Details-menu-drawer-submenu-{{ forloop.index }}">
                                           <summary class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
@@ -208,9 +208,9 @@
                                             <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
                                               {%- for grandchildlink in childlink.links -%}
                                                 <li>
-                                                  <!-- <a href="{{ grandchildlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                                                 <a href="{{ grandchildlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
                                                     {{ grandchildlink.title | escape }}
-                                                  </a> -->
+                                                  </a>
                                                 </li>
                                               {%- endfor -%}
                                             </ul>
@@ -224,9 +224,9 @@
                             </div>
                           </details>
                         {%- else -%}
-                          <!-- <a href="{{ link.url }}" class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"{% if link.current %} aria-current="page"{% endif %}>
+                         <a href="{{ link.url }}" class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"{% if link.current %} aria-current="page"{% endif %}>
                             {{ link.title | escape }}
-                          </a> -->
+                          </a>
                         {%- endif -%}
                       </li>
                     {%- endfor -%}
@@ -248,74 +248,74 @@
                   <ul class="list list-social list-unstyled" role="list">
                     {%- if settings.social_twitter_link != blank -%}
                       <li class="list-social__item">
-                        <!-- <a href="{{ settings.social_twitter_link }}" class="list-social__link link">
+                       <a href="{{ settings.social_twitter_link }}" class="list-social__link link">
                           {%- render 'icon-twitter' -%}
                           <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
-                        </a> -->
+                        </a>
                       </li>
                     {%- endif -%}
                     {%- if settings.social_facebook_link != blank -%}
                       <li class="list-social__item">
-                        <!-- <a href="{{ settings.social_facebook_link }}" class="list-social__link link">
+                       <a href="{{ settings.social_facebook_link }}" class="list-social__link link">
                           {%- render 'icon-facebook' -%}
                           <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
-                        </a> -->
+                        </a>
                       </li>
                     {%- endif -%}
                     {%- if settings.social_pinterest_link != blank -%}
                       <li class="list-social__item">
-                        <!-- <a href="{{ settings.social_pinterest_link }}" class="list-social__link link">
+                       <a href="{{ settings.social_pinterest_link }}" class="list-social__link link">
                           {%- render 'icon-pinterest' -%}
                           <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
-                        </a> -->
+                        </a>
                       </li>
                     {%- endif -%}
                     {%- if settings.social_instagram_link != blank -%}
                       <li class="list-social__item">
-                        <!-- <a href="{{ settings.social_instagram_link }}" class="list-social__link link">
+                       <a href="{{ settings.social_instagram_link }}" class="list-social__link link">
                           {%- render 'icon-instagram' -%}
                           <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
-                        </a> -->
+                        </a>
                       </li>
                     {%- endif -%}
                     {%- if settings.social_tiktok_link != blank -%}
                       <li class="list-social__item">
-                        <!-- <a href="{{ settings.social_tiktok_link }}" class="list-social__link link">
+                       <a href="{{ settings.social_tiktok_link }}" class="list-social__link link">
                           {%- render 'icon-tiktok' -%}
                           <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
-                        </a> -->
+                        </a>
                       </li>
                     {%- endif -%}
                     {%- if settings.social_tumblr_link != blank -%}
                       <li class="list-social__item">
-                        <!-- <a href="{{ settings.social_tumblr_link }}" class="list-social__link link">
+                       <a href="{{ settings.social_tumblr_link }}" class="list-social__link link">
                           {%- render 'icon-tumblr' -%}
                           <span class="visually-hidden">{{ 'general.social.links.tumblr' | t }}</span>
-                        </a> -->
+                        </a>
                       </li>
                     {%- endif -%}
                     {%- if settings.social_snapchat_link != blank -%}
                       <li class="list-social__item">
-                        <!-- <a href="{{ settings.social_snapchat_link }}" class="list-social__link link">
+                       <a href="{{ settings.social_snapchat_link }}" class="list-social__link link">
                           {%- render 'icon-snapchat' -%}
                           <span class="visually-hidden">{{ 'general.social.links.snapchat' | t }}</span>
-                        </a> -->
+                        </a>
                       </li>
                     {%- endif -%}
                     {%- if settings.social_youtube_link != blank -%}
                       <li class="list-social__item">
-                        <!-- <a href="{{ settings.social_youtube_link }}" class="list-social__link link">
+                       <a href="{{ settings.social_youtube_link }}" class="list-social__link link">
                           {%- render 'icon-youtube' -%}
                           <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
-                        </a> -->
+                        </a>
                       </li>
                     {%- endif -%}
                     {%- if settings.social_vimeo_link != blank -%}
                       <li class="list-social__item">
-                        <!-- <a href="{{ settings.social_vimeo_link }}" class="list-social__link link">
+                       <a href="{{ settings.social_vimeo_link }}" class="list-social__link link">
                           {%- render 'icon-vimeo' -%}
                           <span class="visually-hidden">{{ 'general.social.links.vimeo' | t }}</span>
-                        </a> -->
+                        </a>
                       </li>
                     {%- endif -%}
                   </ul>
@@ -370,9 +370,9 @@
                     <label class="field__label" for="Search-In-Modal-1">{{ 'general.search.search' | t }}</label>
                     <input type="hidden" name="options[prefix]" value="last">
                     <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
-                      <!-- <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                     <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
                         <use href="#icon-search">
-                      </svg> -->
+                      </svg>
                     </button>
                   </div>
 
@@ -401,7 +401,6 @@
         </details>
       </details-modal>
     {%- endif -%}
-
     {%- if request.page_type == 'index' -%}
       <h1 class="header__heading">
     {%- endif -%}
@@ -632,6 +631,21 @@
       </a>
     </div>
   </header>
+  {%- comment -%} <div style="background: gold;color:#000">
+    {% if shop.customer_accounts_enabled %}
+      {% if customer %}
+        <a href="/account">Account</a>
+        {{'log out' | customer_logout_link }}
+        {% else %}
+          {{'log in' | customer_login_link }}
+          {{' Register' | customer_register_link }}
+      {% endif %}
+      
+    {% endif %}
+    <p>
+      thanh kaka
+    </p>
+  </div> {%- endcomment -%}
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
 
 {%- if settings.cart_type == "notification" -%}
