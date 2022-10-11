@@ -142,16 +142,7 @@
       </div>
     </div>
       <div style="display: flex;flex-direction: row;justify-content: end;">
-        <div style="display: flex;justify-content:center;border-right:1px solid #999; padding-right:10px">
-          <a  style=" color:#000;text-decoration: none;display: inline;margin-left: 5px; font-size: 12px;" href="/account/login" id="customer_login_link" >
-            Login
-          </a>
-        </div>
-        <div  style="display: flex;justify-content:center; ">
-            <a  style=" color:#000;text-decoration: none;display: inline;margin-left: 5px; font-size: 12px;" href="{{ routes.account_register_url }}" >
-              Create account
-            </a>
-        </div>
+        {% render 'login-logout' %}
       </div>
   </div>
 </div>
