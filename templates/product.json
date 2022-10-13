@@ -59,6 +59,12 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "b6c6f43c-2f91-4401-a752-fbc6937fe1c0": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "Stock: {{product.variants.first.inventory_quantity}}"
+          }
         }
       },
       "block_order": [
@@ -71,7 +77,8 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "b6c6f43c-2f91-4401-a752-fbc6937fe1c0"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -277,6 +284,8 @@
         "text"
       ],
       "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 60,
