@@ -32,6 +32,12 @@
           "settings": {
           }
         },
+        "b6c6f43c-2f91-4401-a752-fbc6937fe1c0": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "Stock: {{product.variants.first.inventory_quantity}}"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -59,12 +65,6 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "b6c6f43c-2f91-4401-a752-fbc6937fe1c0": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "Stock: {{product.variants.first.inventory_quantity}}"
-          }
         }
       },
       "block_order": [
@@ -73,12 +73,12 @@
         "caption",
         "rating",
         "price",
+        "b6c6f43c-2f91-4401-a752-fbc6937fe1c0",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share",
-        "b6c6f43c-2f91-4401-a752-fbc6937fe1c0"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
