@@ -13,9 +13,7 @@
     {{ 'customer.register.title' | t }}
   </h1>
   {%- form 'create_customer', novalidate: 'novalidate' -%}
-    {%- if form.errors -%}
-     {% render 'error' , form: form %}
-    {%- endif -%}
+    {% render 'notification-status' , form: form %}
     <div class="field">      
       <input
         type="text"

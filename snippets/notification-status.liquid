@@ -1,4 +1,4 @@
-<div style="background: red;">
+{%- comment -%} <div style="background: red;">
     {% for error in form.errors %}
       <div style="border:1px solid #000">
         {% if error == 'form' %}
@@ -8,8 +8,8 @@
         {% endif %}
       </div>
     {% endfor %}
-  </div>
-  {%- comment -%} {%- if form.posted_successfully? -%}
+  </div> {%- endcomment -%}
+{%- if form.posted_successfully? -%}
     <div class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</div>
   {%- elsif form.errors -%}
     <div class="form__message">
@@ -22,4 +22,4 @@
         </a>
       </li>
     </ul>
-  {%- endif -%} {%- endcomment -%}
+  {%- endif -%}
