@@ -14,18 +14,7 @@
   </h1>
   {%- form 'create_customer', novalidate: 'novalidate' -%}
     {%- if form.errors -%}
-      <div>kakaka</div>
-      <div style="background: red;">
-        {% for error in form.errors %}
-          <div style="border:1px solid #000">
-            {% if error == 'form' %}
-              day là 1: {{ form.errors.messages[error] }}
-              {% else %}
-               day là 2: {{ form.errors.translated_fields[error] }} - {{ form.errors.messages[error] }}
-            {% endif %}
-          </div>
-        {% endfor %}
-      </div>
+     {% render 'error' , form: form %}
     {%- endif -%}
     <div class="field">      
       <input
