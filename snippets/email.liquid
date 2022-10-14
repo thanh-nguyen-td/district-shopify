@@ -2,7 +2,21 @@
 <div style="">
     {% form 'customer' %}
         <input type="hidden" name="contact[tags]" value="newsletter">
-        <input id="email"  name="contact[email]" type="email" style="height: 35px;font-size:16px;"/>
+        <input 
+            id="email" 
+            name="contact[email]" 
+            type="email"
+            required
+            style="height: 35px;font-size:16px;"/>
         <button type="submit" style="width:50px;height:35px; padding:7px; border:0; position:relative; bottom:3px">{% render 'icon-email' %}</button>
+        <div>demo1</div>
+        {%- if form.errors -%}
+            <div>demo1</div>
+            <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
+          {%- endif -%}
+          {%- if form.posted_successfully? -%}
+            <div>demo2</div>
+            <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
+          {%- endif -%}
     {% endform %}
 </div>
