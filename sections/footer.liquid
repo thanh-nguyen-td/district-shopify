@@ -112,12 +112,13 @@
                   <div style="color:#000;">
                     <div style="font-size: 14px;text-align:center; margin-bottom: 10px;">{{section.blocks.first.settings.content}}</div>
                     <div class="wrap-email">
-                      <input type="text" style="height:100%; width:100%; margin: 0 10px;"/>
+                      {%- comment -%} <input type="text" style="height:100%; width:100%; margin: 0 10px;"/>
                       <a style="background: #999;height: 100%; width:60px; display: flex;justify-content:center;align-items:center">
                        <div style="height: 10px;width:10px;margin-top: -10px;">
                         {% render 'icon-email' %}
                        </div>
-                      </a>
+                      </a> {%- endcomment -%}
+                      {% render 'email' %}
                     </div>
                   </div>
                   {%- when 'social_network' -%}
