@@ -48,3 +48,24 @@
 .child-container:hover .custom-img{
     transform: scale(1.1);
 }
+
+/* display center*/
+.custom_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center_justify{
+    display: flex;
+    justify-content: center;
+}
+.center_align{
+    display: flex;
+    align-items: center;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-col{
+    flex-direction: column;
+}
