@@ -212,7 +212,7 @@
     "blocks": {
       "4918592460924562117": {
         "type": "shopify:\/\/apps\/optimonk-website-personalizer\/blocks\/app-embed\/0b488be1-fc0a-4fe6-8793-f2bef383dba8",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }
