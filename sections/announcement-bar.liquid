@@ -19,7 +19,30 @@
       </div>
   {%- endcase -%}
 {%- endfor -%}
-
+<script>
+ console.log( document.querySelector('#custom-show-search #icon').textContent)
+</script>
+{% style %}
+.show-search-container{
+  position: relative;
+  background:pink
+}
+.show-search-container .icon{
+  position: absolute;
+}
+.show-search-container .modal-search {
+  position: absolute;
+  background: red; 
+  width:100%;
+  height:150px;
+  display:none
+}
+.modal-search .child{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+{% endstyle %}
 {% schema %}
 {
   "name": "t:sections.announcement-bar.name",

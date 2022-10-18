@@ -7,9 +7,9 @@
             name="contact[email]" 
             type="email"
             required
+            oninput="deleteWhitespaceInputLengthZero('#email')"
             style="height: 35px;font-size:16px;"/>
         <button type="submit" style="width:50px;height:35px; padding:7px; border:0; position:relative; bottom:3px">{% render 'icon-email' %}</button>
-        <div>demo1</div>
         {%- if form.errors -%}
             <div>demo1</div>
             <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
@@ -20,3 +20,6 @@
           {%- endif -%}
     {% endform %}
 </div>
+<script>
+
+</script>
