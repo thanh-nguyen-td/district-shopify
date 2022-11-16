@@ -1,0 +1,50 @@
+.head-container{
+    min-height: 20px;
+}
+.wrap-menu .menu-mega-container > li{
+    display:inline-table;
+    height: 40px;
+    line-height: 40px;
+    width: 120px;
+    text-align: center;
+    
+}
+.wrap-menu .menu-mega-container {
+    background: violet;
+    padding:0;
+}
+.wrap-menu ul  li a{
+    display: block;
+}
+.wrap-menu ul  li a:hover {
+   background: pink;
+}
+.head-container .head-container__sub-menu{
+   display: none;
+   background: gold;
+ 
+}
+.head-container .wrap-menu ul  li:hover .head-container__sub-menu{
+    display: block;
+    position: absolute;
+}
+.sub-menu-mega {
+    background: red;
+    position:absolute;
+    z-index:10;
+    display: flex;
+}
+
+.sub-menu-mega .item-menu-mega ul{
+   
+}
+.sub-menu-mega .item-text-mega {
+    background: green;
+}
+
+.sub-menu-mega .item-img-mega {
+    background: gold;
+}
+.sub-menu-mega .item-img-mega img {
+    width: 100%;
+}
