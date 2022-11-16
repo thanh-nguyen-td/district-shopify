@@ -1,0 +1,24 @@
+<div style="background:brown">
+    demo
+    <h1>{{ section.settings.heading }}</h1>
+</div>
+{% schema %}
+{
+    "name":"Demo",
+    "tag":"section",
+    "settings":[
+        {
+            "type":"text",
+            "id":"heading",
+            "default":"toi la demo",
+            "label":"Heading"
+        },
+        {
+            "type":"checkbox",
+            "id":"default_menu",
+            "default":true,
+            "label":"Default size menu"
+        }
+    ]
+}
+{% endschema %}

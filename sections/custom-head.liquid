@@ -1,6 +1,7 @@
 {{'custom-head.css' | asset_url | stylesheet_tag}}
 <div class="head-container">
     <div class="wrap-menu">
+        {% section 'demo' %}
         <ul class="menu-mega-container">
             <li style="background: gold;" class="items-menu-mega">
                 <a>home 1</a>
@@ -18,7 +19,7 @@
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt ea unde architecto. Fuga maxime similique nostrum, eius odit veniam consectetur, error consequatur dolore sint ipsam at ipsum vel rem quas?
                     </div>
                     <div class="item-img-mega">
-                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                        {%- comment -%} {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }} {%- endcomment -%}
                         <img src="https://vaithuhayho.com/wp-content/uploads/2021/03/hinh-anh-dep-51.jpg" width="auto" height="auto" loading="lazy"/>
                     </div>
                 </div>
