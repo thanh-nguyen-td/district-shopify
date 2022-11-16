@@ -204,6 +204,38 @@
         "settings": {
           "color_scheme": "inverse"
         }
+      },
+      "custom-head": {
+        "type": "custom-head",
+        "blocks": {
+          "92cffce0-b063-45ab-b306-cecf2f4c5b23": {
+            "type": "text",
+            "settings": {
+              "title_text": "demo Text 1"
+            }
+          },
+          "24e729b7-afa3-41f5-b33f-fa7900a40daf": {
+            "type": "text",
+            "settings": {
+              "title_text": "demo Text 2"
+            }
+          },
+          "ee551242-b8c0-48b3-82b9-96a2e4690f10": {
+            "type": "text",
+            "settings": {
+              "title_text": "demo Text 3"
+            }
+          }
+        },
+        "block_order": [
+          "92cffce0-b063-45ab-b306-cecf2f4c5b23",
+          "24e729b7-afa3-41f5-b33f-fa7900a40daf",
+          "ee551242-b8c0-48b3-82b9-96a2e4690f10"
+        ],
+        "settings": {
+          "type_menu": true,
+          "default_menu": true
+        }
       }
     },
     "content_for_index": [
