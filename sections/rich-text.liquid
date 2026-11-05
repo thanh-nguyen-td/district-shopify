@@ -39,7 +39,7 @@
             {%- when 'button' -%}
               <div class="rich-text__buttons{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
                 {%- if block.settings.button_label != blank -%}
-                {% render 'custom-button' ,text_button:block.settings.button_label; button_link: block.settings.button_link  %}
+                {% render 'custom-button', text_button: block.settings.button_label, button_link: block.settings.button_link %}
                   <!-- <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label | escape }}</a> -->
                 {%- endif -%}
                 {%- if block.settings.button_label_2 != blank -%}
@@ -320,3 +320,15 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render 'custom-button' ,text_button:block.settings.button_label; button_link:
+    block.settings.button_link  %}"
+  to: "{% render 'custom-button', text_button: block.settings.button_label, button_link:
+    block.settings.button_link %}"
+  position: 2516..2627
+{% endcomment %}
